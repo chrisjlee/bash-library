@@ -15,7 +15,7 @@ function check_root() {
 function prompt_yes_or_no() {
   echo -n "Do you like foo bar? [y/n] [n]:"
   read $prompt
-  if [ "$prompt! == "y" ]; then
+  if [ "$prompt" == "y" ]; then
     echo "You answered $prompt. Executing..."
   else
     echo "Aborting because you answered $prompt"
